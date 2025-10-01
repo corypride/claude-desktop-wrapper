@@ -1,0 +1,27 @@
+cat > .gitignore << 'EOF'
+# Exclude Nativefier/Electron binaries and large files
+Claude*
+*.so
+*.so.*
+*.dat
+*.pak
+*.bin
+chrome_*
+icudtl.dat
+resources.pak
+snapshot_blob.bin
+v8_context_snapshot.bin
+locales/
+
+# Keep documentation and scripts
+!*.md
+!*.sh
+!resources/app/icon.png
+
+# Standard ignores
+node_modules/
+*.log
+.DS_Store
+*.tmp
+.env
+EOF
